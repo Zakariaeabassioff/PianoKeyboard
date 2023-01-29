@@ -1,0 +1,35 @@
+:root {
+    --Background-teal: #37B2C3;
+    --yellow: #ffd200;
+    --pink: #f40082;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Background-teal);
+}
+
+.wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-keys {
+    fill: #fff;
+}
+
+.black-keys {
+    fill: #000;
+}
+
+a:hover .white-keys{
+    fill: var(--yellow);
+}
+
+a:hover .black-keys{
+    fill: var(--pink);
+}
