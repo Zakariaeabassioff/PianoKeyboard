@@ -8,7 +8,9 @@ const blackKeys = [...document.querySelectorAll('path.black-keys')];
 const keys = [...whiteKeys, ...blackKeys];
 
 keys.forEach((key, i) => {
+    //Ajout d'un attribut data-index à chaque touche qui nous permettra de lié le son à la touche
     key.dataset.index = i + 1;
+    //Ajout d'un écouteur d'événement "click" sur chaque touche
     key.addEventListener('click', (e) => { 
         const index = e.target.dataset.index;
         playSound(index);
